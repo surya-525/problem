@@ -1,19 +1,13 @@
+<!DOCTYPE html>
+<html>
 <head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
+    <title>htop Output</title>
+</head>
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
-    </div>
+    <h1>htop Output</h1>
+    <p>Name: {{ full_name }}</p>
+    <p>Username: {{ username }}</p>
+    <p>Server Time (IST): {{ server_time }}</p>
+    <pre>{{ htop_output }}</pre>
 </body>
-
 </html>
